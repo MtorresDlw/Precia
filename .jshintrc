@@ -1,0 +1,9 @@
+{
+	"browserify":true,
+	"globals":{
+		"angular":true,
+		"console":true,
+		"cordova":true,
+		"Windows":true
+	}
+}

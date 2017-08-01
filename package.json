@@ -1,0 +1,60 @@
+{
+  "author": "DLW",
+  "browser": {
+    "angular-carousel": "./node_modules/angular-carousel/dist/angular-carousel.js"
+  },
+  "browserify-shim": {
+    "angular": "angular",
+    "angular-carousel": {
+      "depends": "angular",
+      "exports": "angular.module('angular-carousel')"
+    }
+  },
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-animate": "^1.4.3",
+    "angular-carousel": "^0.3.12",
+    "angular-cookies": "^1.4.3",
+    "angular-mocks": "^1.4.3",
+    "angular-sanitize": "^1.4.3",
+    "angular-touch": "^1.4.3",
+    "angular-translate": "^2.7.2",
+    "angular-ui-bootstrap": "^0.13.2",
+    "angular-ui-router": "^0.2.15",
+    "angularjs-toaster": "^0.4.15",
+    "bootstrap": "^3.3.5",
+    "font-awesome": "^4.4.0",
+    "pouchdb": "^5.2.0"
+  },
+  "description": "DLW FieldAnywhere application",
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "browserify": "^11.0.1",
+    "connect-modrewrite": "^0.8.2",
+    "del": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^1.7.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-less": "^3.0.3",
+    "gulp-shell": "^0.4.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "lodash.assign": "^3.2.0",
+    "run-sequence": "^1.1.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.3.1"
+  },
+  "license": "MIT",
+  "main": "index.html",
+  "name": "fieldanywhere",
+  "repository": {
+    "type": "git",
+    "url": "https://delaware.visualstudio.com/DefaultCollection/_git/DLWR.FieldAnywhere"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.5"
+}

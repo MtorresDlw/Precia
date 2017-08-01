@@ -1,0 +1,227 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Clock--Green {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -5px;
+}
+
+.sprite-Clock-Gray {
+    width: 22px;
+    height: 22px;
+    background-position: -37px -5px;
+}
+
+.sprite-Ico-Ophalen-copy-9 {
+    width: 34px;
+    height: 30px;
+    background-position: -69px -5px;
+}
+
+.sprite-arrow-down {
+    width: 61px;
+    height: 61px;
+    background-position: -113px -5px;
+}
+
+.sprite-arrow-up {
+    width: 61px;
+    height: 61px;
+    background-position: -184px -5px;
+}
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -255px -5px;
+}
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -5px -45px;
+}
+
+.sprite-ico--chat {
+    width: 70px;
+    height: 54px;
+    background-position: -45px -76px;
+}
+
+.sprite-ico--chat-2 {
+    width: 70px;
+    height: 54px;
+    background-position: -125px -76px;
+}
+
+.sprite-ico--checkmark {
+    width: 60px;
+    height: 46px;
+    background-position: -205px -76px;
+}
+
+.sprite-ico--clock {
+    width: 44px;
+    height: 44px;
+    background-position: -205px -132px;
+}
+
+.sprite-ico--cross {
+    width: 27px;
+    height: 27px;
+    background-position: -275px -45px;
+}
+
+.sprite-ico--faq {
+    width: 60px;
+    height: 60px;
+    background-position: -5px -186px;
+}
+
+.sprite-ico--gear {
+    width: 44px;
+    height: 44px;
+    background-position: -259px -132px;
+}
+
+.sprite-ico--hammer {
+    width: 36px;
+    height: 44px;
+    background-position: -75px -186px;
+}
+
+.sprite-ico--home {
+    width: 36px;
+    height: 36px;
+    background-position: -121px -186px;
+}
+
+.sprite-ico--lock {
+    width: 12px;
+    height: 16px;
+    background-position: -295px -5px;
+}
+
+.sprite-ico--login {
+    width: 12px;
+    height: 15px;
+    background-position: -275px -82px;
+}
+
+.sprite-ico--logwork {
+    width: 60px;
+    height: 60px;
+    background-position: -167px -186px;
+}
+
+.sprite-ico--plus {
+    width: 30px;
+    height: 31px;
+    background-position: -5px -107px;
+}
+
+.sprite-ico--qr {
+    width: 56px;
+    height: 56px;
+    background-position: -237px -186px;
+}
+
+.sprite-ico--question {
+    width: 61px;
+    height: 61px;
+    background-position: -317px -5px;
+}
+
+.sprite-ico--request-problem {
+    width: 56px;
+    height: 70px;
+    background-position: -313px -76px;
+}
+
+.sprite-ico--settings {
+    width: 28px;
+    height: 26px;
+    background-position: -313px -156px;
+}
+
+.sprite-ico--user {
+    width: 42px;
+    height: 34px;
+    background-position: -303px -192px;
+}
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -121px -236px;
+}
+
+.sprite-pointer--issue {
+    width: 38px;
+    height: 37px;
+    background-position: -303px -236px;
+}
+
+.sprite-pointer--issue--white {
+    width: 38px;
+    height: 37px;
+    background-position: -5px -283px;
+}
+
+.sprite-pointer--maintenance {
+    width: 38px;
+    height: 37px;
+    background-position: -53px -283px;
+}
+
+.sprite-pointer--maintenance--white {
+    width: 38px;
+    height: 37px;
+    background-position: -101px -283px;
+}
+
+.sprite-pointer--picking {
+    width: 38px;
+    height: 37px;
+    background-position: -149px -283px;
+}
+
+.sprite-pointer--picking--white {
+    width: 38px;
+    height: 37px;
+    background-position: -197px -283px;
+}
+
+.sprite-pointer-check {
+    width: 38px;
+    height: 37px;
+    background-position: -245px -283px;
+}
+
+.sprite-pointer-check--white {
+    width: 38px;
+    height: 37px;
+    background-position: -293px -283px;
+}
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -341px -283px;
+}
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -341px -323px;
+}
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -388px -5px;
+}

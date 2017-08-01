@@ -1,0 +1,15 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Materials('9')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Materials('9')",
+          "type": "ZFIELD_SRV.Material"
+        },
+        "MaterialNr": "9",
+        "BaseUnit": "EA"
+      }
+    ]
+  }
+}

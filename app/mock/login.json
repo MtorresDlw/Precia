@@ -1,0 +1,40 @@
+{
+  "d": {
+    "EntitySets": [
+      "ConfirmReasons",
+      "ReplaceEquipments",
+      "DismantleEquipments",
+      "InstallEquipments",
+      "Orders",
+      "Notifications",
+      "Tasks",
+      "Components",
+      "Priorities",
+      "Materials",
+      "MaterialTexts",
+      "Confirmations",
+      "MaterialDocs",
+      "MaterialDocItems",
+      "Customers",
+      "Units",
+      "Settings",
+      "StorageLocs",
+      "LocTrees",
+      "LocationTexts",
+      "EquipmentTexts",
+      "CharValues",
+      "CharValueTexts",
+      "Chars",
+      "Classes",
+      "CharTexts",
+      "ClassTexts",
+      "Documents",
+      "LookupEquipments",
+      "LookupLocations",
+      "Locations",
+      "Equipments",
+      "CustCoordinates",
+      "Measurements"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/StorageLocs('G001')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/StorageLocs('G001')",
+          "type": "ZFIELD_SRV.StorageLoc"
+        },
+        "StorageLocationNr": "G001",
+        "Description": "General Stor Loc"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/StorageLocs('R001')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/StorageLocs('R001')",
+          "type": "ZFIELD_SRV.StorageLoc"
+        },
+        "StorageLocationNr": "R001",
+        "Description": "Ras Al Khor WH"
+      }
+    ]
+  }
+}

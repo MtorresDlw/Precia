@@ -1,0 +1,15 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Settings('ZMOB_FS_WORKCENTER')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Settings('ZMOB_FS_WORKCENTER')",
+          "type": "ZFIELD_SRV.Setting"
+        },
+        "Parameter": "ZMOB_FS_WORKCENTER",
+        "Value": "FM-01-02"
+      }
+    ]
+  }
+}

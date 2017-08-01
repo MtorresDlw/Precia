@@ -1,0 +1,1931 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000024')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000024')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000024",
+        "Status": "REL  MANC NMAT PRC  SETC",
+        "PriorityNr": "",
+        "Description": "",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20151002",
+        "StartTime": "PT11H00M00S",
+        "FinishDate": "20151002",
+        "FinishTime": "PT13H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000024')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000024',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000024',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000024",
+              "TaskNr": "0010",
+              "Description": "sliding door makes noise",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000024',TaskNr='0020')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000024',TaskNr='0020')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000024",
+              "TaskNr": "0020",
+              "Description": "sliding door makes noise",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000020')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000020')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000020",
+        "Status": "REL  NMAT PRC  SETC",
+        "PriorityNr": "5",
+        "Description": "Major: PM Checklist HVAC suite/rest",
+        "LocationNr": "M01-02-02-11-A",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20160705",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20160705",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000020')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "PPM Checklist - HVAC - SUITE/RESTAURANT",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Off Coil Temperature before and after se",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Clean Filters",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check Drain Pipe",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check Drain Pan for clogging",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check Insulation condition",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check Motor & Thermostat Operation",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check V Belt condition and tightness and",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check for blower and motor vibrations an",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check Controls",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Clean Strainer if required",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Check cooling coil condition clean if re",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000020',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000020",
+              "TaskNr": "0010",
+              "Description": "Put biocide tablet in drain pan",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000021')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000021')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000021",
+        "Status": "REL  NMAT PRC  SETC",
+        "PriorityNr": "5",
+        "Description": "Major: PM Checklist HVAC suite/rest AHU",
+        "LocationNr": "M01-02-07-03",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20160405",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20160405",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000021')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "PPM Checklist - HVAC - SUITE/RESTAURANT",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Off Coil Temperature before and after se",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Clean Filters",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check Drain Pipe",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check Drain Pan for clogging",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check Insulation condition",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check Motor & Thermostat Operation",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check V Belt condition and tightness and",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check for blower and motor vibrations an",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check Controls",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Clean Strainer if required",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Check cooling coil condition and clean i",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000021',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000021",
+              "TaskNr": "0010",
+              "Description": "Put biocide tablet in drain pan",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000023')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000023')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000023",
+        "Status": "REL  NMAT PRC  SETC",
+        "PriorityNr": "5",
+        "Description": "Major: PM Checklist HVAC suite/rest FCU",
+        "LocationNr": "M01-02-07-03",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20160819",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20160819",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000023')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "PPM Checklist - HVAC - SUITE/RESTAURANT",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Off Coil Temperature before & after serv",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Clean Filters",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check Drain Pipe",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check Drain Pan for clogging",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check Insulation condition",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check Motor & Thermostat Operation",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check V Belt cond,tight,replace if req",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check for blower,motor vibrts & rectify",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check Controls",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Clean Strainer if required",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Check cooling coil cond & clean if req",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000023',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000023",
+              "TaskNr": "0010",
+              "Description": "Put biocide tablet in drain pan",
+              "UnitWork": "",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000028')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000028')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000028",
+        "Status": "REL  MANC NMAT PRC  SETC",
+        "PriorityNr": "4",
+        "Description": "key hole is defect",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20150909",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20150909",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000028')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000028',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000028',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000028",
+              "TaskNr": "0010",
+              "Description": "key hole is defect test description",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000028',TaskNr='0020')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000028',TaskNr='0020')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000028",
+              "TaskNr": "0020",
+              "Description": "check for other defects",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000028',TaskNr='0030')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000028',TaskNr='0030')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000028",
+              "TaskNr": "0030",
+              "Description": "key hole is defect",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000041')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000041')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000041",
+        "Status": "TECO CNF  NMAT PRC  SETC",
+        "PriorityNr": "",
+        "Description": "",
+        "LocationNr": "M",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20151004",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20151004",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000041')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000041',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000041',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000041",
+              "TaskNr": "0010",
+              "Description": "",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000302',ConfirmationCtr='00000001')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000302',ConfirmationCtr='00000001')",
+                      "type": "ZFIELD_SRV.Confirmation"
+                    },
+                    "ConfirmationNr": "0000000302",
+                    "ConfirmationCtr": "00000001",
+                    "OrderNr": "4000041",
+                    "TaskNr": "0010",
+                    "ActualWork": "2.0",
+                    "UnitWork": "H",
+                    "FinalConfirmation": "X",
+                    "ConfText": "",
+                    "PostingDate": "20151004",
+                    "CreatedBy": "RAMILJA",
+                    "ActivityType": "1001",
+                    "Reason": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000040')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000040')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000040",
+        "Status": "REL  MANC NMAT PRC  SETC",
+        "PriorityNr": "3",
+        "Description": "nwbc notification",
+        "LocationNr": "M",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20150914",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20150921",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000040')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000040',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000040',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000040",
+              "TaskNr": "0010",
+              "Description": "nwbc notification",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000042')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000042')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000042",
+        "Status": "REL  NMAT PRC  SETC",
+        "PriorityNr": "4",
+        "Description": "wall paint is damaged",
+        "LocationNr": "M01-07-02-01-CIVL",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20151005",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20151104",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "wall paint is damaged\n05.10.2015 10:40:21 UTC+4 Ramilja Mikhramova (RAMILJA)\nwall paint is damaged.\nPlease repaint the wall.",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000042')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000042',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000042',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000042",
+              "TaskNr": "0010",
+              "Description": "wall paint is damaged",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000027')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000027')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000027",
+        "Status": "REL  NMAT PRC  SETC",
+        "PriorityNr": "4",
+        "Description": "defect bottom rail",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "EquipmentNr": "100000014",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20150907",
+        "StartTime": "PT12H20M00S",
+        "FinishDate": "20150930",
+        "FinishTime": "PT12H20M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000027')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000027',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000027',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000027",
+              "TaskNr": "0010",
+              "Description": "defect bottom rail",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000027',TaskNr='0020')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000027',TaskNr='0020')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000027",
+              "TaskNr": "0020",
+              "Description": "check corrosion",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000027',TaskNr='0030')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000027',TaskNr='0030')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000027",
+              "TaskNr": "0030",
+              "Description": "defect bottom rail",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000030')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000030')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000030",
+        "Status": "REL  CNF  CSER GMPS MANC PRC  SETC",
+        "PriorityNr": "3",
+        "Description": "sliding door remains open 3",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20150910",
+        "StartTime": "PT11H36M00S",
+        "FinishDate": "20150917",
+        "FinishTime": "PT11H36M00S",
+        "LongText": "sliding door remains open 3\n10.09.2015 11:36:25 UTC+4 Safi Akhtar (SAFI) Phone 3168674 3168674\n10.09.2015 10:50:04 UTC+4 Safi Akhtar (SAFI) Phone 3168674 3168674\nUnable to close the sliding door.",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000030')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000030',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000030',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000030",
+              "TaskNr": "0010",
+              "Description": "sliding door remains open 3",
+              "UnitWork": "H",
+              "Components": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000030',TaskNr='0010',MaterialNr='10000021')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000030',TaskNr='0010',MaterialNr='10000021')",
+                      "type": "ZFIELD_SRV.Component"
+                    },
+                    "OrderNr": "4000030",
+                    "TaskNr": "0010",
+                    "MaterialNr": "10000021",
+                    "StorageLocationNr": "",
+                    "RequirementQuantity": "1.000",
+                    "BaseUnit": "KG",
+                    "UsedQuantity": "1.000"
+                  }
+                ]
+              },
+              "Confirmations": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000264',ConfirmationCtr='00000001')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000264',ConfirmationCtr='00000001')",
+                      "type": "ZFIELD_SRV.Confirmation"
+                    },
+                    "ConfirmationNr": "0000000264",
+                    "ConfirmationCtr": "00000001",
+                    "OrderNr": "4000030",
+                    "TaskNr": "0010",
+                    "ActualWork": "1.0",
+                    "UnitWork": "H",
+                    "FinalConfirmation": "X",
+                    "ConfText": "",
+                    "PostingDate": "20150910",
+                    "CreatedBy": "SAFI",
+                    "ActivityType": "1005",
+                    "Reason": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000030',TaskNr='0010',MaterialNr='10000021')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000030',TaskNr='0010',MaterialNr='10000021')",
+                "type": "ZFIELD_SRV.Component"
+              },
+              "OrderNr": "4000030",
+              "TaskNr": "0010",
+              "MaterialNr": "10000021",
+              "StorageLocationNr": "",
+              "RequirementQuantity": "1.000",
+              "BaseUnit": "KG",
+              "UsedQuantity": "1.000"
+            }
+          ]
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000026')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000026')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000026",
+        "Status": "REL  MANC PRC  SETC",
+        "PriorityNr": "3",
+        "Description": "work with spare parts",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20150903",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20150930",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000026')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000026',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000026',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000026",
+              "TaskNr": "0010",
+              "Description": "work with spare parts",
+              "UnitWork": "H",
+              "Components": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000026',TaskNr='0010',MaterialNr='20000020')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000026',TaskNr='0010',MaterialNr='20000020')",
+                      "type": "ZFIELD_SRV.Component"
+                    },
+                    "OrderNr": "4000026",
+                    "TaskNr": "0010",
+                    "MaterialNr": "20000020",
+                    "StorageLocationNr": "G001",
+                    "RequirementQuantity": "1.000",
+                    "BaseUnit": "KG",
+                    "UsedQuantity": "0.000"
+                  }
+                ]
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000026',TaskNr='0020')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000026',TaskNr='0020')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000026",
+              "TaskNr": "0020",
+              "Description": "work with spare parts 1",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000026',TaskNr='0030')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000026',TaskNr='0030')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000026",
+              "TaskNr": "0030",
+              "Description": "work with spare parts2",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000026',TaskNr='0010',MaterialNr='20000020')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000026',TaskNr='0010',MaterialNr='20000020')",
+                "type": "ZFIELD_SRV.Component"
+              },
+              "OrderNr": "4000026",
+              "TaskNr": "0010",
+              "MaterialNr": "20000020",
+              "StorageLocationNr": "G001",
+              "RequirementQuantity": "1.000",
+              "BaseUnit": "KG",
+              "UsedQuantity": "0.000"
+            }
+          ]
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000043')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000043')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000043",
+        "Status": "REL  PCNF CSER GMPS MANC PRC  SETC",
+        "PriorityNr": "",
+        "Description": "general inspection check",
+        "LocationNr": "M10",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20151007",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20151007",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000043')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000043',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000043',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000043",
+              "TaskNr": "0010",
+              "Description": "general inspection check",
+              "UnitWork": "H",
+              "Components": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000043',TaskNr='0010',MaterialNr='9')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000043',TaskNr='0010',MaterialNr='9')",
+                      "type": "ZFIELD_SRV.Component"
+                    },
+                    "OrderNr": "4000043",
+                    "TaskNr": "0010",
+                    "MaterialNr": "9",
+                    "StorageLocationNr": "G001",
+                    "RequirementQuantity": "1",
+                    "BaseUnit": "EA",
+                    "UsedQuantity": "1"
+                  }
+                ]
+              },
+              "Confirmations": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000304',ConfirmationCtr='00000001')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000304',ConfirmationCtr='00000001')",
+                      "type": "ZFIELD_SRV.Confirmation"
+                    },
+                    "ConfirmationNr": "0000000304",
+                    "ConfirmationCtr": "00000001",
+                    "OrderNr": "4000043",
+                    "TaskNr": "0010",
+                    "ActualWork": "2.0",
+                    "UnitWork": "H",
+                    "FinalConfirmation": "X",
+                    "ConfText": "",
+                    "PostingDate": "20151007",
+                    "CreatedBy": "RAMILJA",
+                    "ActivityType": "1001",
+                    "Reason": ""
+                  }
+                ]
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000043',TaskNr='0020')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000043',TaskNr='0020')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000043",
+              "TaskNr": "0020",
+              "Description": "check stables",
+              "UnitWork": "H",
+              "Components": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000043',TaskNr='',MaterialNr='9')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000043',TaskNr='',MaterialNr='9')",
+                      "type": "ZFIELD_SRV.Component"
+                    },
+                    "OrderNr": "4000043",
+                    "TaskNr": "",
+                    "MaterialNr": "9",
+                    "StorageLocationNr": "",
+                    "RequirementQuantity": "0",
+                    "BaseUnit": "EA",
+                    "UsedQuantity": "1"
+                  }
+                ]
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000043',TaskNr='0010',MaterialNr='9')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000043',TaskNr='0010',MaterialNr='9')",
+                "type": "ZFIELD_SRV.Component"
+              },
+              "OrderNr": "4000043",
+              "TaskNr": "0010",
+              "MaterialNr": "9",
+              "StorageLocationNr": "G001",
+              "RequirementQuantity": "1",
+              "BaseUnit": "EA",
+              "UsedQuantity": "1"
+            }
+          ]
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000044')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000044')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000044",
+        "Status": "TECO CNF  GMPS MACM PRC  SETC",
+        "PriorityNr": "",
+        "Description": "check stables",
+        "LocationNr": "M10",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20151007",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20151007",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000044')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000044',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000044',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000044",
+              "TaskNr": "0010",
+              "Description": "check stables",
+              "UnitWork": "H",
+              "Components": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000044',TaskNr='0010',MaterialNr='9')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000044',TaskNr='0010',MaterialNr='9')",
+                      "type": "ZFIELD_SRV.Component"
+                    },
+                    "OrderNr": "4000044",
+                    "TaskNr": "0010",
+                    "MaterialNr": "9",
+                    "StorageLocationNr": "G001",
+                    "RequirementQuantity": "1",
+                    "BaseUnit": "EA",
+                    "UsedQuantity": "1"
+                  }
+                ]
+              },
+              "Confirmations": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000306',ConfirmationCtr='00000001')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000306',ConfirmationCtr='00000001')",
+                      "type": "ZFIELD_SRV.Confirmation"
+                    },
+                    "ConfirmationNr": "0000000306",
+                    "ConfirmationCtr": "00000001",
+                    "OrderNr": "4000044",
+                    "TaskNr": "0010",
+                    "ActualWork": "2.5",
+                    "UnitWork": "H",
+                    "FinalConfirmation": "X",
+                    "ConfText": "",
+                    "PostingDate": "20151007",
+                    "CreatedBy": "RAMILJA",
+                    "ActivityType": "",
+                    "Reason": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000044',TaskNr='0010',MaterialNr='9')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000044',TaskNr='0010',MaterialNr='9')",
+                "type": "ZFIELD_SRV.Component"
+              },
+              "OrderNr": "4000044",
+              "TaskNr": "0010",
+              "MaterialNr": "9",
+              "StorageLocationNr": "G001",
+              "RequirementQuantity": "1",
+              "BaseUnit": "EA",
+              "UsedQuantity": "1"
+            }
+          ]
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000045')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000045')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000045",
+        "Status": "TECO CNF  GMPS MACM PRC  SETC",
+        "PriorityNr": "3",
+        "Description": "inspection",
+        "LocationNr": "M01-07-02-01-FIRE",
+        "EquipmentNr": "100000095",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20151007",
+        "StartTime": "PT13H28M00S",
+        "FinishDate": "20151007",
+        "FinishTime": "PT13H28M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000045')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000045',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000045',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000045",
+              "TaskNr": "0010",
+              "Description": "inspection",
+              "UnitWork": "H",
+              "Components": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000045',TaskNr='0010',MaterialNr='9')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000045',TaskNr='0010',MaterialNr='9')",
+                      "type": "ZFIELD_SRV.Component"
+                    },
+                    "OrderNr": "4000045",
+                    "TaskNr": "0010",
+                    "MaterialNr": "9",
+                    "StorageLocationNr": "G001",
+                    "RequirementQuantity": "1",
+                    "BaseUnit": "EA",
+                    "UsedQuantity": "1"
+                  }
+                ]
+              },
+              "Confirmations": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000307',ConfirmationCtr='00000001')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Confirmations(ConfirmationNr='0000000307',ConfirmationCtr='00000001')",
+                      "type": "ZFIELD_SRV.Confirmation"
+                    },
+                    "ConfirmationNr": "0000000307",
+                    "ConfirmationCtr": "00000001",
+                    "OrderNr": "4000045",
+                    "TaskNr": "0010",
+                    "ActualWork": "2.0",
+                    "UnitWork": "H",
+                    "FinalConfirmation": "X",
+                    "ConfText": "",
+                    "PostingDate": "20151007",
+                    "CreatedBy": "RAMILJA",
+                    "ActivityType": "",
+                    "Reason": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000045',TaskNr='0010',MaterialNr='9')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000045',TaskNr='0010',MaterialNr='9')",
+                "type": "ZFIELD_SRV.Component"
+              },
+              "OrderNr": "4000045",
+              "TaskNr": "0010",
+              "MaterialNr": "9",
+              "StorageLocationNr": "G001",
+              "RequirementQuantity": "1",
+              "BaseUnit": "EA",
+              "UsedQuantity": "1"
+            }
+          ]
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000047')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000047')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000047",
+        "Status": "REL  MACM PRC  SETC",
+        "PriorityNr": "3",
+        "Description": "work order with text item",
+        "LocationNr": "M01-07-02-01-FIRE",
+        "EquipmentNr": "100000095",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20151007",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20151014",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000047')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000047',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000047',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000047",
+              "TaskNr": "0010",
+              "Description": "work order with text item",
+              "UnitWork": "H",
+              "Components": {
+                "results": [
+                  {
+                    "__metadata": {
+                      "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000047',TaskNr='0010',MaterialNr='')",
+                      "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000047',TaskNr='0010',MaterialNr='')",
+                      "type": "ZFIELD_SRV.Component"
+                    },
+                    "OrderNr": "4000047",
+                    "TaskNr": "0010",
+                    "MaterialNr": "",
+                    "StorageLocationNr": "",
+                    "RequirementQuantity": "2",
+                    "BaseUnit": "EA",
+                    "UsedQuantity": "0"
+                  }
+                ]
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000047',TaskNr='0010',MaterialNr='')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Components(OrderNr='4000047',TaskNr='0010',MaterialNr='')",
+                "type": "ZFIELD_SRV.Component"
+              },
+              "OrderNr": "4000047",
+              "TaskNr": "0010",
+              "MaterialNr": "",
+              "StorageLocationNr": "",
+              "RequirementQuantity": "2",
+              "BaseUnit": "EA",
+              "UsedQuantity": "0"
+            }
+          ]
+        },
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000031')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000031')",
+          "type": "ZFIELD_SRV.Order"
+        },
+        "OrderNr": "4000031",
+        "Status": "REL  MANC NMAT PRC  SETC",
+        "PriorityNr": "3",
+        "Description": "repair door lock",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "EquipmentNr": "",
+        "CustomerNr": "",
+        "ContactPersonNr": "",
+        "StartDate": "20150915",
+        "StartTime": "PT00H00M00S",
+        "FinishDate": "20150922",
+        "FinishTime": "PT24H00M00S",
+        "LongText": "",
+        "WorkCenter": "FM-01-02",
+        "Confirmations": {
+          "__deferred": {
+            "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Orders('4000031')/Confirmations"
+          }
+        },
+        "Tasks": {
+          "results": [
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000031',TaskNr='0010')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000031',TaskNr='0010')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000031",
+              "TaskNr": "0010",
+              "Description": "repair door lock",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000031',TaskNr='0020')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000031',TaskNr='0020')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000031",
+              "TaskNr": "0020",
+              "Description": "oil refill",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            },
+            {
+              "__metadata": {
+                "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000031',TaskNr='0030')",
+                "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Tasks(OrderNr='4000031',TaskNr='0030')",
+                "type": "ZFIELD_SRV.Task"
+              },
+              "OrderNr": "4000031",
+              "TaskNr": "0030",
+              "Description": "standard inspection",
+              "UnitWork": "H",
+              "Components": {
+                "results": []
+              },
+              "Confirmations": {
+                "results": []
+              }
+            }
+          ]
+        },
+        "Components": {
+          "results": []
+        },
+        "Documents": {
+          "results": []
+        }
+      }
+    ]
+  }
+}

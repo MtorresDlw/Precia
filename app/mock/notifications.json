@@ -1,0 +1,292 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000024')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000024')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000024",
+        "Description": "defect bottom rail",
+        "MaterialNr": "",
+        "PriorityNr": "",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20150907",
+        "EndDate": "00000000",
+        "StartTime": "09:03:48",
+        "EndTime": "00:00:00",
+        "ReportedBy": "",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000027",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000027')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000027')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000027",
+        "Description": "nwbc notification",
+        "MaterialNr": "",
+        "PriorityNr": "3",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20150914",
+        "EndDate": "20150921",
+        "StartTime": "11:32:01",
+        "EndTime": "11:32:01",
+        "ReportedBy": "RAMILJA",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000040",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000031')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000031')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000031",
+        "Description": "wall paint is damaged",
+        "MaterialNr": "",
+        "PriorityNr": "4",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20151005",
+        "EndDate": "20151104",
+        "StartTime": "04:38:20",
+        "EndTime": "04:38:20",
+        "ReportedBy": "RAMILJA",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000042",
+        "LongText": "wall paint is damaged.\nPlease repaint the wall.",
+        "EquipmentNr": "",
+        "LocationNr": "M01-07-02-01-CIVL",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000032')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000032')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000032",
+        "Description": "general inspection check",
+        "MaterialNr": "",
+        "PriorityNr": "",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20151006",
+        "EndDate": "00000000",
+        "StartTime": "20:00:00",
+        "EndTime": "00:00:00",
+        "ReportedBy": "",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000043",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M10",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000036')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000036')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000036",
+        "Description": "work order with text item",
+        "MaterialNr": "",
+        "PriorityNr": "3",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20151007",
+        "EndDate": "20151014",
+        "StartTime": "10:28:54",
+        "EndTime": "10:28:54",
+        "ReportedBy": "",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000047",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M01-07-02-01-FIRE",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000037')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000037')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000037",
+        "Description": "repair door",
+        "MaterialNr": "",
+        "PriorityNr": "2",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20151008",
+        "EndDate": "20151008",
+        "StartTime": "13:08:57",
+        "EndTime": "13:08:57",
+        "ReportedBy": "",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000048",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000038')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000038')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000038",
+        "Description": "glass is broken",
+        "MaterialNr": "",
+        "PriorityNr": "3",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20151007",
+        "EndDate": "20151014",
+        "StartTime": "11:48:39",
+        "EndTime": "11:48:39",
+        "ReportedBy": "RAMILJA",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000049",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M01-07-02-01-FIRE",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000022')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000022')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000022",
+        "Description": "sliding door makes noise",
+        "MaterialNr": "",
+        "PriorityNr": "",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20150907",
+        "EndDate": "00000000",
+        "StartTime": "09:03:18",
+        "EndTime": "00:00:00",
+        "ReportedBy": "",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000024",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000023')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000023')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000023",
+        "Description": "work with spare parts",
+        "MaterialNr": "",
+        "PriorityNr": "",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20150907",
+        "EndDate": "00000000",
+        "StartTime": "09:03:32",
+        "EndTime": "00:00:00",
+        "ReportedBy": "",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000026",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000026')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000026')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000026",
+        "Description": "sliding door remains open 3",
+        "MaterialNr": "",
+        "PriorityNr": "3",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20150910",
+        "EndDate": "20150917",
+        "StartTime": "07:36:21",
+        "EndTime": "07:36:21",
+        "ReportedBy": "SAFI",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000030",
+        "LongText": "10.09.2015 10:50:04 UTC+4 Safi Akhtar (SAFI) Phone 3168674 3168674\nUnable to close the sliding door.",
+        "EquipmentNr": "",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "Documents": {
+          "results": []
+        }
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000029')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Notifications('10000029')",
+          "type": "ZFIELD_SRV.PMNotification"
+        },
+        "NotificationNr": "10000029",
+        "Description": "key hole is defect",
+        "MaterialNr": "",
+        "PriorityNr": "4",
+        "WorkCenter": "FM-01-02",
+        "StartDate": "20150924",
+        "EndDate": "20151024",
+        "StartTime": "14:32:06",
+        "EndTime": "14:32:06",
+        "ReportedBy": "",
+        "Status": "NOPR",
+        "CustomerNr": "",
+        "OrderNr": "4000028",
+        "LongText": "",
+        "EquipmentNr": "",
+        "LocationNr": "M01-0G-01-01-SLDO",
+        "Documents": {
+          "results": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "d": {
+    "results": [
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='1')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='1')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "D",
+        "PriorityNr": "1",
+        "Description": "1-sehr hoch"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='2')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='2')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "D",
+        "PriorityNr": "2",
+        "Description": "2-hoch"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='3')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='3')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "D",
+        "PriorityNr": "3",
+        "Description": "3-mittel"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='4')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='4')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "D",
+        "PriorityNr": "4",
+        "Description": "4-niedrig"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='5')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='D',PriorityNr='5')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "D",
+        "PriorityNr": "5",
+        "Description": "4-niedrig"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='5')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='5')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "E",
+        "PriorityNr": "5",
+        "Description": "To be scheduled"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='1')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='1')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "E",
+        "PriorityNr": "1",
+        "Description": "Immediate Intervnt"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='2')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='2')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "E",
+        "PriorityNr": "2",
+        "Description": "Next Day Intervnt"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='3')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='3')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "E",
+        "PriorityNr": "3",
+        "Description": "Within Week Intervnt"
+      },
+      {
+        "__metadata": {
+          "id": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='4')",
+          "uri": "http://gsusapdp01.group.ad:8001/sap/opu/odata/sap/ZFIELD_SRV/Priorities(Language='E',PriorityNr='4')",
+          "type": "ZFIELD_SRV.Priority"
+        },
+        "Language": "E",
+        "PriorityNr": "4",
+        "Description": "Within Month Intervn"
+      }
+    ]
+  }
+}

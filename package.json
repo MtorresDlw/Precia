@@ -48,10 +48,10 @@
   },
   "license": "MIT",
   "main": "index.html",
-  "name": "fieldanywhere",
+  "name": "Precia",
   "repository": {
     "type": "git",
-    "url": "https://delaware.visualstudio.com/DefaultCollection/_git/DLWR.FieldAnywhere"
+    "url": "https://github.com/MtorresDlw/Precia"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

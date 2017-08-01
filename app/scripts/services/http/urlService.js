@@ -3,7 +3,7 @@
 module.exports = function(){
 	this.get = function(sUrl){
 		if (window.location.hostname === "localhost"){
-		    //return "/api" + sUrl;
+		    return "/api" + sUrl;
 		}
 		//DEV
 		//return 'http://sbe1-vm-gwdev.stowint.be:8000/sap/opu/odata/sap/ZFIELD_SRV;o=QASCLNT900' + sUrl;

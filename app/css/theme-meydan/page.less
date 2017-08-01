@@ -1,0 +1,147 @@
+.background-photo {
+    background: url(@image-background) no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page {
+    height: 100%;
+    overflow: hidden;
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+}
+
+.tab_heading a {
+    color: @color-background-header;/*#0163ad;*/
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:focus {
+    color: @color-text-tab;
+}
+
+.page-view {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.page-nav {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    background: @color-background-filter;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.page-content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.page-content.narrow {
+    margin-left: 25%;
+    height: 100%;
+    width: 75%;
+}
+
+.page-nav ul {
+    margin-right: 1px;
+}
+
+.page-nav li {
+    border-bottom: 1px solid @color-border-filter;
+    border-right: 1px solid @color-border-filter;
+}
+
+.page-nav li a {
+    display: block;
+    height: 60px;
+    color: @color-text-search;
+    line-height: 60px;
+    font-size: 22px;
+}
+
+.page-nav li a.selected, .page-nav li a:hover {
+    background: @color-background-nav-selected;
+}
+
+.page-nav li .navFa {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.page-subnav li a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.page-subnav .taskNr {
+    float: right;
+    font-size: 12px;
+    color: @color-text-nav;
+}
+
+.statusBar {
+    background: @color-text-nav;
+}
+
+.navFa {
+    color: @color-text-nav;
+}
+
+.veryHigh .navFa {
+    color: @color-text-nav-very-high;
+}
+
+.veryHigh .statusBar {
+    background: @color-background-nav-very-high;
+}
+
+
+.high .navFa {
+    color: @color-text-nav-high;
+}
+
+.high .statusBar {
+    background: @color-background-nav-high;
+}
+
+.medium .navFa {
+    color: #f1c40e;
+}
+
+.medium .statusBar {
+    background: #f1c40e;
+}
+
+.low .navFa {
+    color: #50cb61;
+}
+
+.low .statusBar {
+    background: #50cb61;
+}
+
+.tabh4 {
+    background: #3586b1;
+    /*font-size: 20px;
+    line-height: 45px;*/
+}

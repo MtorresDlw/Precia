@@ -1,0 +1,95 @@
+/**FLYOVER**/
+.flyover {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	width: 350px;
+	height: 100%;
+	background-color: @color-white;
+	overflow: hidden;
+
+	> .header {
+		height: 80px;
+		background: @color-background-header;
+		line-height: 80px;
+		color: @color-white;
+		font-size: 26px;
+		padding: 0 25px;
+
+		> .fa {
+			color: @color-icon-header;
+			float: right;
+			line-height: 80px;
+			font-size: 30px;
+		}
+	}
+
+	> .content {
+		overflow: hidden;
+		height: 100%;
+
+		> .search {
+
+		}
+
+		> .list {
+			height: 100%;
+			overflow: auto;
+
+			> .list-loader {
+				text-align: center;
+				padding: 30px;
+
+				> .fa {
+					font-size: 45px;
+				}
+			}
+
+			> .list-item {
+				padding: 0 20px;
+				height: 42px;
+				line-height: 42px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+
+			&.list-item:first-child {
+				margin-top: 10px;
+			}
+			> .list-item:last-child {
+				margin-bottom: 80px;
+			}
+		}
+	}
+}
+
+.flyover-overlay {
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+
+/**animation**/
+.flyover.ng-hide {
+	right: -350px;
+}
+.flyover.ng-hide-remove-active {
+	transition: all linear 0.5s;
+	right: 0;
+}
+
+.flyover.ng-hide-add-active {
+	transition: all linear 0.5s;
+	right: -350px;
+}
+
+.flyover-overlay.ng-hide-add-active {
+	background-color: rgba(0,0,0,0.0);
+	transition: background-color linear 0.5s;
+}

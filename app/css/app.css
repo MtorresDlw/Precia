@@ -1,0 +1,619 @@
+/* Private Variables */
+.page-aside li {
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.page-aside li span {
+    float: left;
+}
+
+.page-aside .urgent, .page-aside .urgent a {
+    color: #ff0000;
+}
+
+.page-aside .warning, .page-aside .warning a {
+    color: #ff8400;
+}
+
+.page-list {
+    background: #f3f3f3;
+    padding: 61px 0px 0px 0px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page-list-loader {
+    text-align: center;
+    margin-top: 20px;
+}
+.page-list-loader .fa-spinner {
+    font-size: 40px;
+}
+
+.notify.page-list {
+    padding-bottom: 62px;
+}
+
+.page-list ul {
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.page-list li {
+    border-bottom: 1px solid #f3f3f3;
+    background: #fefefe;
+}
+
+.page-list li:hover {
+    background: #cee6f7;
+}
+
+.page-list li .statusBar {
+    display: block;
+    float: left;
+    width: 5px;
+    height: 60px;
+}
+
+.page-list li .fa {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.page-list li a {
+    text-decoration: none;
+}
+
+.page-list li a:hover {
+    text-decoration: none;
+}
+
+.listInfo {
+    padding: 5px 0;
+    margin: 0 15px 0 55px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #999999;
+}
+
+.listInfo h3 {
+    color: #484848;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.listInfo span {
+    display: block;
+}
+
+.listInfo .leftSide {
+    float: left;
+    width: 60%;
+}
+
+.listInfo .rightSide {
+    margin-left: 60%;
+    width: 40%;
+}
+
+.notify > .button {
+    position: absolute;
+    bottom: 10px;
+    right: 13px;
+}
+
+.page-whole {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.page-button {
+    padding-bottom: 80px;
+}
+
+.page-overview {
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+    box-sizing: border-box;
+    padding: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.withButtonBox{
+    bottom:62px;
+}
+
+.buttonBox {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 62px;
+    padding: 11px 13px;
+    background: #f3f3f3;
+}
+
+.button {
+    display: block;
+    float: right;
+    margin: 0 5px;
+    border: none;
+    height: 40px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0 15px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.button:focus {
+    outline: none;
+}
+.disabled{
+    opacity: 0.2;
+}
+
+.button .fa {
+    line-height: 40px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.page-overview h1 {
+    font-size: 24px;
+    color: #1255ee;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+}
+
+.page-overview h1 .orderNr {
+    font-weight: bold;
+    color: #0a3faf;
+    margin: 0 10px;
+}
+
+.page-overview h1 .orderTlt {
+    font-size: 14px;
+    color: #081945;
+}
+
+.page-info {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.infoItem {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #c9c9ce;
+}
+
+.infoItem:first-child {
+    padding-top: 0;
+    border-top: 0;
+}
+
+.infoTlt {
+    vertical-align: top;
+    width: 15%;
+    display: inline-block;
+}
+
+.infoDetail {
+    width: 83%;
+    display: inline-block;
+}
+
+.infoDetail:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.infoHalf {
+    width: 50%;
+    margin-left: 50%;
+}
+
+.infoHalf:first-child {
+    float: left;
+    margin-left: 0;
+}
+
+.infoLabel {
+    display: block;
+    width: 40%;
+    color: #1255ee;
+    float: left;
+}
+
+.infoTxt {
+    display: block;
+    width: 60%;
+    margin-left: 40%;
+}
+
+.infoTxt .navFa {
+    margin-right: 5px;
+}
+
+.fileBox a {
+    color: #081945;
+}
+
+.fileType {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 20px;
+    margin: 2px 0;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: center;
+    background: #f3f3f3;
+}
+
+.fileName {
+    display: block;
+    margin-left: 60px;
+    text-decoration: underline;
+}
+
+.fileBox a:hover .fileName {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #322777;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h4 {
+    line-height: 30px;
+    background: #f3f3f3;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+h4 .fa {
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.selected h4 {
+    background: #0c3182;
+    color: #fff;
+    cursor: default;
+}
+
+.tabBox li {
+    height: 30px;
+    overflow: hidden;
+}
+
+.tabBox .selected {
+    height: auto;
+}
+
+.tabBox th, .tabBox td {
+    line-height: 30px;
+}
+
+.confirmList th {
+    text-align: left;
+    border-top: 1px solid #c9c9ce;
+}
+
+.confirmList tr:first-child th, .componentList tr:first-child th {
+    border-top: 0;
+    font-size:13px;
+}
+
+.confirmList td, .componentList td {
+    border-top: 1px solid #c9c9ce;
+    font-size:13px;
+}
+
+.componentList th {
+    text-align: left;
+}
+
+.confirmList th:first-child, .confirmList td:first-child, .componentList th:first-child, .componentList td:first-child {
+    padding-left: 10px;
+}
+
+.confirmList .total {
+    color: #1153f0;
+}
+
+.signatureBox {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.signatureBox input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    margin: 0px 0px 12px 0px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #c9c9ce;
+    padding: 0 20px;
+}
+
+.signatureArea {
+    width: 100%;
+    height: 480px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.createBox {
+    padding: 20px 10px 20px 10px;
+}
+
+.createBox:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.createBox .createCell {
+    width: 32%;
+    float: left;
+    margin-left: 2%;
+}
+
+.createBox .createCell:first-child {
+    margin-left: 0;
+}
+
+.createBox label,
+.createBox input[type="text"],
+.createBox select,
+.createBox textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.createBox label {
+    line-height: 25px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.createBox input[type="text"] {
+    border: 1px solid #c9c9ce;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+}
+
+.createBox textarea {
+    border: 1px solid #c9c9ce;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 5px;
+    min-width: 100%;
+    max-width: 100%;
+    height: 480px;
+    min-height: 130px;
+}
+
+.createBox select {
+    padding: 5px;
+    border: 1px solid #c9c9ce;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.date-wrapper {
+    position: relative;
+}
+
+.date-wrapper input[type="text"] {
+    padding: 0 30px 0 5px;
+}
+
+.date-wrapper .fa-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.carousel {
+    position: relative;
+    width: 240px;
+    margin: 10px auto 0 auto;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-inner .item {
+    display: none;
+    transition: left 0.6s ease-in-out 0s;
+}
+
+.carousel-inner .active {
+    display: block;
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background: #dddddd;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.carousel-indicators li.active {
+    background: #0c3182;
+}
+
+.carousel-stow {
+    margin-top:20px;
+    display:inline-block;
+    text-align: center;
+}
+.carousel-stow-fullscreen {
+  width:100%;
+  height:100%;
+}
+.carousel-stow-fullscreen ul[rn-carousel] {
+  width:100%;
+  height:100%;
+}
+
+.carousel-stow .grid {
+    width: 800px;
+    height: 480px;
+    background-size: cover;
+}
+
+.view-container
+{
+    height: 100%;
+}
+.view-frame
+{
+    height: 100%;
+}
+
+/*ng-scope {
+    height: 100%;
+}*/
+
+.page-login, .page-dashboard {
+    height: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.infoLabel.serviceReportText{
+    font-size:15px;
+    width:80px;
+    line-height: 30px;
+}
+
+.infoTxt.serviceReportText{
+    font-size:15px;
+    margin-left:80px;
+    width:400px;
+    line-height: 30px;
+}
+
+.leftArrow{
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #322777;
+    margin-left:15%;
+    margin-top:15%;
+    float:left;
+}
+
+.rightArrow{
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #322777;
+    float: right;
+    margin-right:15%;
+    margin-top:15%;
+}
+
+.imageView{
+    max-width:50%;
+    max-height:50%;
+    margin: 0 auto;
+}
+
+.imageBlock{
+    margin-top:20px;
+    width:50%;
+    position: absolute;
+    height:80%;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.slide{
+    height:100%;
+}
+
+.slideBorder{
+    border: 1px solid lightgray;
+}
+
+.clickPdf{
+    position:absolute;
+    horiz-align: center;
+}

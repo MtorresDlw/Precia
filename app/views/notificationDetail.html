@@ -1,0 +1,79 @@
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToNotificationList()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                <span ng-hide="offlineCheck(currentNotification)">{{'_Notification'|translate}} {{currentNotification.NotificationNr}} <span ng-if="currentNotification.Description">: </span>{{currentNotification.Description}}</span>
+                <span ng-show="offlineCheck(currentNotification)">{{'_Pending_Notification'|translate}} <span ng-if="currentNotification.Description">: </span>{{currentNotification.Description}}</span>
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <section class="page-content">
+            <div class="page-whole">
+                <div class="page-overview">
+                    <div class="page-info">
+                        <div class="infoItem">
+                            <div class="infoDetailTabs">
+                                <tabset justified="true">
+                                <tab heading={{'_Information'|translate}} class="tab_heading" active="activateInformation">
+                                <div class="infoHalf">
+                                    <span class="infoLabel">{{'_Status'|translate}}</span>
+                                    <span class="infoTxt">{{currentNotification.Status}}<span
+                                    ng-if="!currentNotification.Status">none</span></span>
+                                    <span class="infoLabel">{{'_Reported_By'|translate}}</span>
+                                    <span class="infoTxt">{{currentNotification.ReportedBy}}<span
+                                    ng-if="!currentNotification.ReportedBy">none</span></span>
+                                    <span class="infoLabel">{{'_Priority'|translate}}</span>
+                                    <span class="infoTxt"
+                                        ng-class="{low: currentNotification.PriorityNr === '4', medium: currentNotification.PriorityNr === '3', high: currentNotification.PriorityNr === '2', veryHigh: currentNotification.PriorityNr === '1'}"><span
+                                        class="navFa fa fa-exclamation-triangle"></span>
+                                        {{currentNotification.Priority.Description}}
+                                        <span fa-priority="{{currentNotification.PriorityNr}}"></span>
+                                            <span
+                                    ng-if="!currentNotification.PriorityNr">none</span></span>
+                                    <span class="infoLabel">{{'_Customer'|translate}}</span>
+                                    <span class="infoTxt">
+                                        <span fa-customer="{{currentNotification.CustomerNr}}"></span>
+                                        <span ng-if="!currentNotification.CustomerNr">none</span>
+                                    </span>
+                                </div>
+                                <div class="infoHalf">
+                                    <span class="infoLabel">{{'_Required_Start'|translate}}</span>
+                                    <span class="infoTxt">{{currentNotification.StartDate|dateFilter}}<span ng-if="(!currentNotification.StartDate || currentNotification.StartDate === '00000000')">none</span></span>
+                                    <span class="infoLabel">{{'_Required_End'|translate}}</span>
+                                    <span class="infoTxt">{{currentNotification.EndDate|dateFilter}}<span ng-if="(!currentNotification.EndDate || currentNotification.EndDate === '00000000')">none</span></span>
+                                </div>
+                                <div class="infoHalf">
+                                    <span class="infoLabel">{{'_Description'|translate}}</span>
+                                    <span class="infoTxt">{{currentNotification.LongText | longTextFilter}}<span
+                                    ng-if="!currentNotification.LongText">none</span></span>
+                                </div>
+                                </tab>
+                                <tab heading={{'_Attachments'|translate}} class="tab_heading" active="activateAttachments" ng-if="currentNotification.Documents.length > 0">
+                                <div class="attachment"
+                                    ng-repeat="document in currentNotification.Documents"
+                                    ng-click="gotoAttachment(document);">
+                                    <div class="attachment-icon">
+                                        <span class="fa fa-file-o"
+                                            ng-class="{'fa-file-image-o':document.MimeType==='image/jpeg'||document.MimeType==='image/png',
+                                        'fa-file-pdf-o': document.MimeType === 'application/pdf'}"></span>
+                                    </div>
+                                    <div class="attachment-name">
+                                        <span ng-if="document.FileName">{{document.FileName + '.' + document.MimeType.split('/')[1]}}</span>
+                                        <span ng-if="!document.FileName">{{document.DocumentId + '.' + document.MimeType.split('/')[1]}}</span>
+                                    </div>
+                                    <div class="attachment-download">
+                                        <span class="fa fa-chevron-right"></span>
+                                    </div>
+                                </div>
+                                </tab>
+                                </tabset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

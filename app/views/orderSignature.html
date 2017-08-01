@@ -1,0 +1,35 @@
+<div class="centerSpinner" ng-show="saving"><i class="fa fa-spinner fa-6 fa-spin"></i></div>
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToServiceReport()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Order'|translate}} {{currentOrder.OrderNr}} <span ng-if="currentOrder.Description">: </span>{{currentOrder.Description}} - {{'_Service_Report'|translate}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view withButtonBox">
+        <section class="page-content">
+            <div class="page-whole page-button">
+                <div class="page-overview">
+                    <div class="signatureBox">
+                        <input ng-disabled="saving || signature.exists" ng-if="!signature.exists" type="text" ng-model="signature.name" placeholder="{{'_Your_Name'|translate}}" />
+                        <input ng-disabled="saving || signature.exists" ng-if="!signature.exists" type="text" ng-model="signature.email" placeholder="{{'_Your_Email'|translate}}" />
+                        <canvas width="600" height="480" id="canvas" signature signature-name="signature.name" signature-data="signature.data" signature-cb="signature.cb" class="signatureArea"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="buttonBox">
+        <button type="button" ng-if="!signature.exists" ng-click="saveSignature()" class="button btn-dark" ng-class="{ 'disabled': !signature.name }" ng-disabled="!signature.name">
+            <span class="fa fa-plus orange"></span>
+            {{'_Save'|translate}}
+        </button>
+
+        <button type="button" ng-if="!signature.exists" ng-click="signature.reset()" class="button btn-dark">
+            <span class="fa fa-close orange"></span>
+            {{'_Clear'|translate}}
+        </button>
+    </div>
+</div>

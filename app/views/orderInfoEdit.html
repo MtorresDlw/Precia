@@ -1,0 +1,104 @@
+<div class="centerSpinner" ng-show="saving"><i class="fa fa-spinner fa-6 fa-spin"></i></div>
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToOrderInfo()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Order'|translate}} {{currentOrder.OrderNr}} <span ng-if="currentOrder.Description">: </span>{{currentOrder.Description}} - {{'_Edit_Information'|translate}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <aside class="page-nav page-subnav">
+            <div class="searchBox">
+                <div class="search-wrapper">
+                    <input ng-disabled="saving" type="text" ng-model="query" placeholder="{{'_Search'|translate}}"/>
+                    <a href="#" class="fa-icon fa fa-search"></a>
+                </div>
+            </div>
+            <ul ng-repeat="task in currentOrder.Tasks|filter:query track by $index">
+                <li><a ng-click="taskItemClick(task,$index)"
+                       ng-class="{selected: $index === idSelectedRow}"><span class="taskNr">{{task.TaskNr}}</span>{{task.Description}}</a>
+                </li>
+            </ul>
+        </aside>
+        <section class="page-content narrow">
+            <div class="page-whole page-button">
+                <div class="page-overview withButtonBox">
+                    <br>
+                    <div class="orderSubTlt">
+                        <a ng-hide="saving" ng-click="goToAddMaterial()" class=" button btn-dark"><span class="fa fa-plus orange"></span>{{'_Add_Material'|translate}}</a>
+                        <a ng-show="saving" class=" button btn-dark disabled">
+                            <span class="fa fa-plus orange"></span>{{'_Add_Material'|translate}}
+                        </a>
+
+                        <h2>{{'_Task'|translate}} {{currentOrder.Tasks[idSelectedRow].TaskNr + ' - ' + currentOrder.Tasks[idSelectedRow].Description}}</h2>
+                        <p>
+                            <span>{{'_Amount'|translate}}: </span><br>
+                            <input ng-disabled="saving || partialConfirmation.task.Confirmations[0].FinalConfirmation" type="number" step="0.1" ng-model="partialConfirmation.amount" />
+                            <span>{{currentOrder.Tasks[idSelectedRow].UnitWork}}</span>
+                        </p>
+                        <p ng-show="partialConfirmation.task.Confirmations[0].FinalConfirmation">
+                            <span>{{'_Final_Confirmation'|translate}}:</span>
+                            <i class="fa fa-check"></i>
+                        </p>
+                        <p>
+                            <span>{{'_Confirmation_Text'|translate}}:</span>
+                            <textarea ng-disabled="saving || partialConfirmation.task.Confirmations[0].FinalConfirmation" ng-model="partialConfirmation.confirmationText" class="confText"></textarea>
+                        </p>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="materialList">
+                        <colgroup>
+                            <col width="10%"/>
+                            <col width="27%"/>
+                            <col width="20%"/>
+                            <col width="20%"/>
+                            <col width="20%"/>
+                            <col width="3%"/>
+                        </colgroup>
+                        <tr>
+                            <th>{{'_Nr'|translate}}</th>
+                            <th>{{'_Description'|translate}}</th>
+                            <th>{{'_Required_Amount'|translate}}</th>
+                            <th>{{'_Used_Amount'|translate}}</th>
+                            <th>{{'_Storage_Location'|translate}}</th>
+                            <th></th>
+                        </tr>
+
+                        <tr ng-repeat="component in currentOrder.Tasks[idSelectedRow].Components track by $index">
+                            <td>{{component.MaterialNr}}</td>
+                            <td><span fa-material="{{component.MaterialNr}}"></span></td>
+                            <td>{{component.RequirementQuantity}} {{component.BaseUnit}}</td>
+                            <td><input ng-disabled="saving" class="tableInput" ng-bind="component.UsedQuantity" ng-model="component.UsedQuantity"/> {{component.BaseUnit}}</td>
+                            <td>
+                                <!--<input ng-disabled="saving" class="tableInput fullWidth" ng-bind="component.StorageLocation" ng-model="component.StorageLocation"/>-->
+                                <span fa-storagelocation="{{component.StorageLocationNr}}"></span></td>
+                            <td ng-click="removeComponent($index)"><i class="fa fa-minus-square"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="buttonBox">
+                <a ng-hide="saving
+                || selectedTask.Confirmations[0].FinalConfirmation == 'X'
+                || !partialConfirmation.confirmationText
+                || partialConfirmation.confirmationText === ''
+                || !partialConfirmation.amount
+                || partialConfirmation.amount === ''"
+                ng-click="createFinalConfirmation()" class="button btn-dark">
+                    <span class="fa fa-check orange"></span>{{'_Partial_Confirmation'|translate}}
+                </a>
+                <a ng-hide="saving
+                || selectedTask.Confirmations[0].FinalConfirmation == 'X'
+                || (partialConfirmation.confirmationText
+                    && partialConfirmation.confirmationText !== ''
+                    && partialConfirmation.amount
+                    && partialConfirmation.amount !== '')"
+                class="button btn-dark disabled">
+                    <span class="fa fa-check orange"></span>{{'_Partial_Confirmation'|translate}}
+                </a>
+                <a ng-hide="!saving" class="button btn-dark disabled"><span class="fa fa-refresh orange"></span>{{'_Please_Wait'|translate}}</a>
+            </div>
+        </section>
+    </div>
+</div>

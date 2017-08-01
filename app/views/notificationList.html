@@ -1,0 +1,55 @@
+<div class="page order-container">
+    <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+    <header>
+        <div class="header-container">
+            <span ng-click="goToDashboard()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Notifications'|translate}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <aside class="page-nav">
+            <priority-filter></priority-filter>
+        </aside>
+        <section class="page-content narrow">
+            <div class="filter">
+                <div class="filter-sort">
+                    {{'_Sort_By'|translate}}:
+                    <a ng-click="sortBy='Description';descriptionToggle()" ng-class="{'filter-criteria-selected' : descriptionCheck}" class="filter-criteria"> {{'_Description'|translate}}</a>
+                    <a ng-click="sortBy='StartDate';dateToggle()" ng-class="{'filter-criteria-selected' : dateCheck}"  class="filter-criteria">{{'_Date'|translate}}</a><!-- no matched -->
+                </div>
+                <div class="search-wrapper">
+                    <input class="form-control input-lg" type="text" placeholder="{{'_Search'|translate}}" ng-model="query">
+                </div>
+            </div>
+            <div class="page-list notify">
+                <ul>
+                    <li ng-repeat="notification in notifications | filter:query | filter:priorityFilter | orderBy:sortBy"
+                        ng-class="{low: notification.PriorityNr === '4', medium: notification.PriorityNr === '3', high: notification.PriorityNr === '2', veryHigh: notification.PriorityNr === '1'}">
+                        <a ng-click="viewDetails(notification)">
+                            <span class="statusBar"></span>
+                            <span class="navFa fa fa-exclamation-triangle"></span>
+
+                            <div class="listInfo">
+                                <div class="leftSide">
+                                    <h3><span ng-hide="notification.Description">-</span>{{notification.Description}}</h3>
+                                    <span ng-hide="offlineCheck(notification)" class="lisCustomer">{{notification.NotificationNr}}</span>
+                                    <span ng-show="offlineCheck(notification)" class="lisCustomer">Pending</span>
+                                </div>
+                                <div class="rightSide">
+                                    <span class="listDate">{{(notification.StartDate | dateFilter) || "No Date"}} </span>
+                                    <span class="listOrder">{{(notification.OrderNr) || "No Order"}} </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <a ng-click="goToCreateNotification()" class="button btn-dark">
+                    <span class="fa fa-plus orange"></span>
+                    {{'_Create_Notification'|translate}}
+                </a>
+            </div>
+        </section>
+    </div>
+</div>

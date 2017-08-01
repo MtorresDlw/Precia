@@ -1,0 +1,46 @@
+<div class="background-photo" ng-swipe-left="swipeLeft();" ng-swipe-right="swipeRight();">
+    <div class="centerSpinner" ng-show="syncing"><i class="fa fa-spinner fa-6 fa-spin"></i></div>
+    <div class="page dashboard-container" ng-hide="syncing">
+        <section class="dashboard-button-box">
+            <div class="dashboard-button">
+                <a ng-click="viewOrders()" class="btn-dark">
+                    <span class="dashboardTlt">{{'_Orders'| translate}}</span>
+                    <span class="dashboardInfo"><span class="fa fa-list-alt"></span></span>
+                </a>
+            </div>
+            <div class="dashboard-button">
+                <a ng-click="viewNotifications()" class="btn-dark">
+                    <span class="dashboardTlt">{{'_Notifications' | translate}}</span>
+                    <span class="dashboardInfo"><span class="fa fa-comment"></span></span>
+                </a>
+            </div>
+            <div class="reset"></div>
+        </section>
+        <footer class="dashboard-footer">
+            <div class="action right">
+                <a ng-click="open()" class="btn right footerBtn"><span class="fa fa-cog orange"></span></a>
+                <span></span><!-- lack of person name-->
+            </div>
+            <div class="action left">
+                <a ng-click="synchronize()" class=" btn left footerBtn"><span class="fa fa-refresh orange"></span></a>
+                <span>{{'_Last_Sync' | translate}}: {{lastSyncDate | date:'dd/MM/yyyy HH:mm'}}</span>
+            </div>
+        </footer>
+        <script type="text/ng-template" id="myModalContent.html">
+            <div class="modal-header">
+                <h2 class="modal-title">{{'_Settings' | translate}}</h2>
+            </div>
+            <div class="modal-body">
+                <h3>{{'_Language' | translate}}</h3>
+                <select ng-model="selectedLanguage" ng-options="language.text for language in languages" ng-change="updateLanguage(selectedLanguage)"></select><br>
+                <h3>{{'_Clear_Database' | translate}}</h3>
+                <label for="cleanDb">{{'_Clear_Database' | translate}}</label>
+                <input type="checkbox" name="cleanDb" value=" " ng-model="cleanDatabaseCheckbox" />
+            </div>
+            <div class="modal-footer">
+                <button class="button btn-light left" ng-click="$state.go('log');$modalInstance.close(selected.item);">Log</button>
+                <button class="button btn-dark" ng-click="ok()">{{'_Close' | translate}}</button>
+            </div>
+        </script>
+    </div>
+</div>

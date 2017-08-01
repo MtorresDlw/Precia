@@ -1,0 +1,94 @@
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToOrderDetail()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Order'|translate}} {{currentOrder.OrderNr}} <span ng-if="currentOrder.Description">: </span>{{currentOrder.Description}} - {{'_Service_Report'|translate}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <section class="page-content">
+            <div class="page-whole page-button">
+                <div class="page-overview withButtonBox">
+                    <br>
+                    <div class="orderSubTlt">
+                        <span class="right">{{currentOrder.StartDate|dateFilter}}</span>
+                    </div>
+                    <div class="page-info">
+                        <div class="infoItem">
+                            <div class="infoTlt">{{'_Customer'|translate}}</div>
+                            <div class="infoDetail customerBlock">
+                                <div class="infoFull customerInfo">
+                                    <span class="infoLabel serviceReportText">{{'_Name'|translate}}</span>
+                                    <span class="infoTxt serviceReportText">{{currentOrder.Customer.Name}}<span ng-if="!currentOrder.Customer.Name">none</span></span>
+                                    <span class="infoLabel serviceReportText">{{'_Address'|translate}}</span>
+                                    <span class="infoTxt serviceReportText">{{currentOrder.Customer.Street}}<br ng-if="currentOrder.Customer.Street"/>{{currentOrder.Customer.PostalCode}} {{currentOrder.Customer.City}}<span ng-if="!(currentOrder.Customer.Street||currentOrder.Customer.City)">none</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="infoItem">
+                            <div class="infoTlt">{{'_Information'|translate}}</div>
+                            <div class="infoDetail">
+                                <div class="tabBox">
+                                    <accordion close-others="oneAtATime" class="tabBox">
+                                        <accordion-group is-open="status.confirmationsOpen">
+                                            <accordion-heading>
+                                                <h4 class="tabh4"><span class="fa fa-angle-down"></span>{{'_Confirmations'|translate}}</h4>
+                                            </accordion-heading>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="confirmList">
+                                                <colgroup>
+                                                    <col width="250" />
+                                                    <col width="" />
+                                                    <col width="100" />
+                                                    <col width="100" />
+                                                </colgroup>
+                                                <tr >
+                                                    <th>{{'_Task'|translate}}</th>
+                                                    <th>{{'_Confirmation_Text'|translate}}</th>
+                                                    <th>{{'_Final_Confirmation'|translate}}</th>
+                                                    <th>{{'_Actual_Work'|translate}}</th>
+                                                </tr>
+                                                <tr ng-repeat="confirmation in getAllConfirmations()">
+                                                    <td>{{confirmation.TaskNr || "-"}} {{confirmation.TaskDescription || "-"}}</td>
+                                                    <td>{{confirmation.LongText || confirmation.ConfText || "-"}}</td>
+                                                    <td><input disabled  type="checkbox" ng-checked="confirmation.FinalConfirmation"></td>
+                                                    <td>{{confirmation.ActualWork || ""}} {{confirmation.UnitWork || ""}}</td>
+                                                </tr>
+                                            </table>
+                                        </accordion-group>
+                                        <accordion-group is-open="status.componentsOpen">
+                                            <accordion-heading>
+                                                <h4 class="tabh4"><span class="fa fa-angle-down"></span>{{'_Components'|translate}}</h4>
+                                            </accordion-heading>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="componentList">
+                                                <colgroup>
+                                                    <col width="200" />
+                                                    <col width="" />
+                                                    <col width="150" />
+                                                </colgroup>
+                                                <tr>
+                                                    <th>{{'_Nr'|translate}}</th>
+                                                    <th>{{'_Description'|translate}}</th>
+                                                    <th>{{'_Used_Amount'|translate}}</th>
+                                                </tr>
+                                                <tr ng-repeat="component in components">
+                                                    <td>{{component.MaterialNr}}</td>
+                                                    <td><span fa-material="{{component.MaterialNr}}"></span></td>
+                                                    <td>{{component.UsedQuantity}}</td>
+                                                </tr>
+                                            </table>
+                                        </accordion-group>
+                                    </accordion>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonBox">
+                <a ng-click="goToOrderSignature()" class="button btn-dark"><span class="fa fa-pencil orange"></span>Add signature</a>
+            </div>
+        </section>
+    </div>
+</div>

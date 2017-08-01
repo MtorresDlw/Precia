@@ -1,0 +1,29 @@
+<section class="page">
+	<header>
+	    <div class="header-container">
+	        <span ng-click="goToDashboard()">
+	            <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+	            Logs
+	        </span>
+	    </div>
+	</header>
+	<div class="log" style="margin-top: 80px">
+		<div class="log-grid" ng-show="logs.length">
+			<h3>Logs</h3>
+			<div class="log-grid-row" ng-repeat="log in logs track by $index">
+				<span>{{log.message + ' ' + log.tag + ' '}} {{log.date | date: 'short'}}</span>
+			</div>
+		</div>
+
+		<div class="log-grid" ng-show="operations.length">
+			<h3>Operations</h3>
+			<div class="log-grid-row" ng-repeat="operation in operations track by $index">
+				<div ng-click="openOperation(operation);">{{operation}}</div>
+				<div ng-click="openOperation(operation);">{{operationDetail[operation].type}}</div>
+				<span ng-click="removeOperation($index, operation);">
+					<i class="log-grid-row-btn fa fa-remove"></i>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,79 @@
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToOrderInfoEdit()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Order'|translate}} {{currentOrder.OrderNr}} <span ng-if="currentOrder.Description">: </span>{{currentOrder.Description}} - {{'_Edit_Information'|translate}} - {{'_Add_Material'|translate}}
+            </span>
+        </div>
+    </header>
+
+    <div class="page-view">
+        <section class="page-content">
+            <div class="page-whole page-button">
+                <div class="page-overview">
+                    <div class="searchHeader">
+                        <div class="searchBox searchMaterial">
+                            <a ng-click="scanMaterial()" class="button btn-dark"><span class="fa fa-qrcode orange"></span>{{'_Scan_QR'|translate}}</a>
+                            <div class="search-wrapper">
+                                <input type="text" placeholder="{{'_Search'|translate}}" ng-model="query" ng-bind="query" />
+                                <a  class="fa-icon fa fa-search"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tableContainer">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="materialList addMaterialList">
+                            <colgroup>
+                                <col width="10%" />
+                                <col width="45%"/>
+                                <col width="20%" />
+                                <col width="20%" />
+                                <col width="5%" />
+                            </colgroup>
+                            <tr>
+                                <th ng-click="sortBy='MaterialNr'" class="sort">{{'_Nr'|translate}}  <span class="fa fa-sort"></span></th>
+                                <th ng-click="sortBy='Description'" class="sort">{{'_Description'|translate}}  <span class="fa fa-sort"></span></th>
+                                <th>{{'_Used_Amount'|translate}}</th>
+                                <th>{{'_Storage_Location'|translate}}</th>
+                                <th></th>
+                            </tr>
+                            <tr class="bigCell" ng-repeat="material in materials | filter:query | orderBy:sortBy track by $index" ng-class-odd="'odd'">
+                                <td ng-model="material.MaterialNr" ng-bind="material.MaterialNr"><span class="fa-icon fa fa-check"></span></td>
+                                <td ng-model="material.Description" ng-bind="material.Description"></td>
+                                <td ng-hide="material.added"><input ng-model="material.UsedQuantity" type="text" /> {{material.BaseUnit}}</td>
+                                <td ng-hide="!material.added"></td>
+                                <td ng-hide="material.added">
+                                    <input ng-model="material.StorageLocationNr" type="text" ng-click="addStorageLocation(material);" />
+                                </td>
+                                <td ng-hide="!material.added"></td>
+                                <td ng-hide="material.added" ng-click="addMaterial(material)"><i class="fa fa-plus-square"></i></td>
+                                <td ng-hide="!material.added" ng-click=""></td>
+                            </tr>
+                        </table>
+                        <div class="loader" ng-show="loading">
+                            <span class="fa fa-spinner fa-spin"></spin>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="flyover" ng-show="showFlyout">
+    <div class="header">
+        <span>{{'addStorageLocation' | translate}}</span>
+        <span class="fa fa-close" ng-click="showFlyout = false"></span>
+    </div>
+    <div class="content">
+        <div class="list">
+            <div ng-show="storageLocations.length === 0" class="list-loader">
+                <span class="fa fa-spinner fa-spin"></span>
+            </div>
+            <div class="list-item" ng-click="selectStorageLocation(location);" ng-repeat="location in storageLocations track by $index" ng-class-odd="'odd'">
+                {{location.Description}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="flyover-overlay" ng-show="showFlyout" ng-click="showFlyout=false;"></div>

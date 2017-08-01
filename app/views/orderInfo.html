@@ -1,0 +1,58 @@
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToOrderDetail();">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Order'|translate}} {{currentOrder.OrderNr}} <span ng-if="currentOrder.Description">: </span>{{currentOrder.Description}} - {{'_Information'|translate}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <aside class="page-nav page-subnav">
+            <div class="searchBox">
+                <div class="search-wrapper">
+                    <input type="text" ng-model="query" placeholder="{{'_Search'|translate}}"/>
+                    <a class="fa-icon fa fa-search"></a>
+                </div>
+            </div>
+            <ul ng-repeat="task in currentOrder.Tasks|filter:query">
+                <li><a ng-click="taskItemClick(task,$index)" ng-class="{selected: $index === idSelectedRow}"><span class="taskNr">{{task.TaskNr}}</span>{{task.Description}}</a></li>
+            </ul>
+        </aside>
+        <section class="page-content narrow">
+            <div class="page-whole page-button">
+                <div class="page-overview withButtonBox">
+                    <br>
+                    <div class="orderSubTlt">
+                        <h2>{{'_Task'|translate}} {{selectedTask.TaskNr +' - '+selectedTask.Description}}</h2>
+                        <p><span>{{'_Amount'|translate}}: </span> {{selectedTask.ActualWork +' '+ selectedTask.UnitWork}}</p>
+                        <p><span>{{'_Final_Confirmation'|translate}}: </span><i ng-show="selectedTask.Confirmations[0].FinalConfirmation" class="fa fa-check orange"></i></p>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="materialList">
+                        <colgroup>
+                            <col width="10%"/>
+                            <col width="30%"/>
+                            <col width="20%"/>
+                            <col width="20%"/>
+                            <col width="20%"/>
+                        </colgroup>
+                        <tr>
+                            <th>{{'_Nr'|translate}}</th>
+                            <th>{{'_Description'|translate}}</th>
+                            <th>{{'_Required_Amount'|translate}}</th>
+                            <th>{{'_Used_Amount'|translate}}</th>
+                            <th>{{'_Storage_Location'|translate}}</th>
+                        </tr>
+                        <tr ng-repeat="component in selectedTask.Components">
+                            <td>{{component.Material.MaterialNr}}</td>
+                            <td>{{component.Material.Description}}</td>
+                            <td>{{component.RequirementQuantity}} {{component.BaseUnit}}</td>
+                            <td>{{component.UsedQuantity}} {{component.BaseUnit}}</td>
+                            <td>{{component.StorageLocation}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

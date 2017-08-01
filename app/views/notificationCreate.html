@@ -1,0 +1,145 @@
+<div class="centerSpinner" ng-show="saving"><i class="fa fa-spinner fa-6 fa-spin"></i></div>
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+         <span ng-click="goToNotificationList()">
+         <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+         {{'_Create_Notification'|translate}}
+         </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
+        <section class="page-content">
+            <form name="notificationForm" novalidate ng-submit="saveNotification()">
+                <div class="page-whole page-button">
+                    <div class="page-overview withButtonBox">
+                        <div class="page-info">
+                            <div class="infoItem">
+                                <div class="infoDetailTabs">
+                                    <tabset justified="true">
+                                        <tab heading={{'_Required_Fields'|translate}}>
+                                            <div class="infoFull">
+                                                <div class="createBox">
+                                                    <div class="createCell2">
+                                                        <label ng-class="{ error: requiredStartDate}">{{'_Required_Start'|translate}}</label>
+                                                        <div class="date-wrapper">
+                                                            <input ng-disabled="saving" ng-click="open($event, 'StartDateOpen')" required datepicker-popup="{{format}}"
+                                                                   is-open="notification.StartDateOpen"
+                                                                   datepicker-options="dateOptions"
+                                                                   ng-required="true"
+                                                                   close-text="Close"
+                                                                   type="text"
+                                                                   placeholder="{{'_Select_Start_Date'|translate}}"
+                                                                   ng-model="notification.StartDate">
+                                                            <span ng-click="open($event, 'StartDateOpen')" class=" fa-icon fa fa-calendar"></span>
+                                                        </div>
+                                                        <label ng-class="{ error: requiredEndDate}">{{'_Required_End'|translate}}</label>
+                                                        <div class="date-wrapper">
+                                                            <input ng-disabled="saving" ng-click="open($event, 'EndDateOpen')" required datepicker-popup="{{format}}"
+                                                                   is-open="notification.EndDateOpen"
+                                                                   datepicker-options="dateOptions"
+                                                                   ng-required="true"
+                                                                   close-text="Close"
+                                                                   type="text"
+                                                                   min="notification.StartDate"
+                                                                   placeholder="{{'_Select_End_Date'|translate}}"
+                                                                   ng-model="notification.EndDate">
+                                                            <span ng-click="open($event, 'EndDateOpen')" class=" fa-icon fa fa-calendar"></span>
+                                                        </div>
+
+                                                        <div class="control-group">
+                                                            <label ng-class="{ error: notificationForm.Description.isRequired || notificationForm.Description.isMaxlength }" class="control-label" for="Description">{{'_Description'|translate}} </label>
+
+                                                            <div class="controls">
+                                                                <input ng-disabled="saving" type="text" name="Description" id="Description"
+                                                                       ng-model="notification.Description" required
+                                                                       maxlength="40"
+                                                                       placeholder="{{'_Description'|translate}}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label class="control-label"
+                                                                   ng-class="{ error: requiredPriority }"
+                                                                   for="Priority">{{'_Priority'|translate}} </label>
+
+                                                            <div class="controls">
+                                                                <select ng-disabled="saving" name="Priority" id="Priority" required
+                                                                        ng-model="notification.Priority"
+                                                                        ng-options="Priority.Description for Priority in priorities"></select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="createCell2">
+                                                        <div class="control-group">
+                                                            <label class="control-label"
+                                                                   ng-class="{ error: notificationForm.ReportedBy.isRequired || notificationForm.ReportedBy.isMaxlength }"
+                                                                   for="ReportedBy">{{'_Reported_By'|translate}}
+                                                            </label>
+                                                            <div class="controls">
+                                                                <input ng-disabled="saving" type="text" name="ReportedBy" id="ReportedBy"
+                                                                       ng-model="notification.ReportedBy" required
+                                                                       maxlength="12"
+                                                                       placeholder="{{'_Your_Name'|translate}}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label class="control-label"
+                                                                   ng-class="{ error: requiredCustomer }"
+                                                                   for="Priority">{{'_Customer'|translate}} </label>
+
+                                                            <div class="controls">
+                                                                <select ng-disabled="saving" name="customer" id="customer" required
+                                                                        ng-model="notification.Customer"
+                                                                        ng-options="Customer.Name for Customer in customers"></select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </tab>
+                                        <tab heading={{'_Long_Description'|translate}}>
+                                            <div class="infoFull">
+                                                <div class="createBox">
+                                                    <label>{{'_Long_Description'|translate}}</label>
+                                       <textarea ng-disabled="saving" placeholder="{{'_Long_Description'|translate}}"
+                                                 ng-model="notification.LongText"></textarea>
+                                                </div>
+                                            </div>
+                                        </tab>
+                                        <tab heading={{'_Attachments'|translate}}>
+                                            <div class="center">
+                                                <div class="carousel-stow" ng-if="slides.length > 0">
+                                                    <ul rn-carousel rn-carousel-controls rn-carousel-index="carouselIndex" class="carousel1 grid">
+                                                        <li ng-repeat="slide in slides">
+                                                            <img ng-src = "{{'data:image/jpg;base64,' + slide.img}}" class="slide" />
+                                                        </li>
+                                                    </ul>
+                                                    <div rn-carousel-indicators ng-if="slides.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
+                                                </div>
+                                            </div>
+                                        </tab>
+                                    </tabset>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonBox">
+                    <a ng-hide="saving || !notification.StartDate || notification.StartDate === '' || !notification.EndDate || notification.EndDate === '' ||
+                                !notification.Description || notification.Description === '' || !notification.Priority || notification.Priority === '' ||
+                                !notification.ReportedBy || notification.ReportedBy === '' || !notification.Customer || notification.Customer === ''"
+                       type="submit" ng-click="saveNotification()" class="button btn-dark"><span class="fa fa-check orange"></span>{{'_Save'|translate}}</a>
+                    <a ng-hide="!(saving || !notification.StartDate || notification.StartDate === '' || !notification.EndDate || notification.EndDate === '' ||
+                                !notification.Description || notification.Description === '' || !notification.Priority || notification.Priority === '' ||
+                                !notification.ReportedBy || notification.ReportedBy === '' || !notification.Customer || notification.Customer === '')"
+                       type="submit" class="button btn-dark disabled"><span class="fa fa-check orange"></span>{{'_Save'|translate}}</a>
+
+                    <a ng-hide="saving" ng-click="takepicture()" class="button btn-dark left hidden"><span class="fa fa-photo orange"></span>{{'_Take_Photo'|translate}}</a>
+                    <a ng-show="saving" class="button btn-dark left disabled"><span class="fa fa-photo orange"></span>{{'_Take_Photo'|translate}}</a>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<ul>
+	<li><a ng-click="priorityFilter = undefined;localFunction($event)" class="selected"><span class="navFa fa fa-list"></span>{{'_All'|translate}}</a></li>
+	<li class="veryHigh"> <a ng-click="priorityFilter = {PriorityNr: '1'};localFunction($event)"><span class="navFa fa fa-exclamation-triangle"></span>{{'_Very_High'|translate}}</a></li>
+	<li  class="high"><a ng-click="priorityFilter = {PriorityNr: '2'};localFunction($event)"><span class="navFa fa fa-exclamation-triangle"></span>{{'_High'|translate}}</a></li>
+	<li  class="medium"><a ng-click="priorityFilter = {PriorityNr: '3'};localFunction($event)"><span class="navFa fa fa-exclamation-triangle"></span>{{'_Medium'|translate}}</a></li>
+	<li  class="low"><a ng-click="priorityFilter = {PriorityNr: '4'};localFunction($event)"><span class="navFa fa fa-exclamation-triangle"></span>{{'_Low'|translate}}</a></li>
+</ul>

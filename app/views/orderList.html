@@ -1,0 +1,57 @@
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToDashboard()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Orders'|translate}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <aside class="page-nav">
+            <priority-filter></priority-filter>
+        </aside>
+        <section class="page-content narrow">
+            <div class="filter">
+                <div class="filter-sort">
+                    {{'_Sort_By'|translate}}:
+                    <a ng-click="sortBy='CustomerName';customerToggle()" ng-class="{'filter-criteria-selected' : descriptionCheck}" class="filter-criteria">{{'_Customer'|translate}}</a>
+                    <a ng-click="sortBy='StartDate';dateToggle()" ng-class="{'filter-criteria-selected' : dateCheck}"  class="filter-criteria">{{'_Date'|translate}}</a><!-- no matched -->
+
+                </div>
+                <div class="search-wrapper">
+                    <input class="form-control input-lg" type="text" placeholder="{{'_Search'|translate}}" ng-model="query">
+                </div>
+            </div>
+            <div class="page-list order">
+                <div ng-show="orders.length === 0" class="page-list-loader"><span class="fa fa-spinner fa-spin"></span></div>
+                <ul>
+                    <li ng-repeat="order in orders | filter:query | filter:priorityFilter | orderBy:sortBy track by order.OrderNr"
+                        ng-class="{
+                        low: order.PriorityNr === '4',
+                        medium: order.PriorityNr === '3',
+                        high: order.PriorityNr === '2', veryHigh: order.PriorityNr === '1'}">
+                        <a ng-click="viewDetailsOrder(order)">
+                            <span class="statusBar"></span>
+                            <span class="navFa fa fa-exclamation-triangle"></span>
+
+                            <div class="listInfo">
+                                <div class="leftSide">
+                                    <h3><span ng-hide="order.Description">-</span>{{order.Description}}</h3>
+                                    <span class="lisCustomer">
+                                        <span ng-hide="order.CustomerNr">-</span>
+                                        <span>{{order.CustomerName}}</span>
+                                    </span>
+                                </div>
+                                <div class="rightSide">
+                                    <span class="listDate">{{order.StartDate|dateFilter}}</span>
+                                    <span class="listOrder">{{order.OrderNr}}</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,139 @@
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToOrderList()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Order'|translate}} {{currentOrder.OrderNr}} <span ng-if="currentOrder.Description">: </span>{{currentOrder.Description}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <section class="page-content">
+            <div class="page-whole">
+                <div class="page-overview withButtonBox">
+                    <div class="page-info">
+                        <div class="infoItem">
+                            <div class="infoDetailTabs">
+                                <tabset justified="true">
+                                    <tab heading={{'_Information'|translate}} class="tab_heading" active="activateInformation">
+                                        <div class="infoHalf">
+                                            <span class="infoLabel">
+                                                {{'_Order_Status'|translate}}
+                                            </span>
+
+                                            <span class="infoTxt">
+                                                {{currentOrder.Status}}
+                                                <span ng-if="!currentOrder.Status">none</span>
+                                            </span>
+
+                                            <span class="infoLabel">
+                                                {{'_Order_Created_By'|translate}}
+                                            </span>
+
+                                            <span class="infoTxt">
+                                                {{currentOrder.ReportedBy}}
+                                                <span ng-if="!currentOrder.ReportedBy">none</span>
+                                            </span>
+
+                                            <span class="infoLabel">
+                                                {{'_Order_Description'|translate}}
+                                            </span>
+
+                                            <span class="infoTxt">
+                                                <span ng-bind-html="longTextHTML"></span>
+                                                <span ng-if="!longTextHTML">none</span>
+                                            </span>
+
+                                            <span class="infoLabel">
+                                                {{'_Order_Priority'|translate}}
+                                            </span>
+
+                                            <span class="infoTxt"
+                                                  ng-class="
+                                                  {
+                                                    low: currentOrder.PriorityNr === '4',
+                                                    medium: currentOrder.PriorityNr === '3',
+                                                    high: currentOrder.PriorityNr === '2',
+                                                    veryHigh: currentOrder.PriorityNr === '1'
+                                                  }">
+                                                <span class="navFa fa fa-exclamation-triangle"></span>
+                                                <span fa-priority="{{currentOrder.PriorityNr}}"></span>
+                                                <span ng-if="!currentOrder.PriorityNr">none</span>
+                                            </span>
+
+                                            <span class="infoLabel">
+                                                {{'_Order_Start'|translate}}
+                                            </span>
+
+                                            <span class="infoTxt">
+                                                {{currentOrder.StartDate| dateFilter}}
+                                                <span ng-if="!currentOrder.StartDate">-</span>
+                                            </span>
+
+                                            <span class="infoLabel">
+                                                {{'_Order_End'|translate}}
+                                            </span>
+                                            <span class="infoTxt">
+                                                {{currentOrder.EndDate| dateFilter}}
+                                                <span ng-if="!currentOrder.EndDate">-</span>
+                                            </span>
+
+                                            <span class="infoTxt">
+                                                {{currentOrder.FinishDate | dateFilter}}
+                                                <span ng-if="!currentOrder.FinishDate">-</span>
+                                            </span>
+
+                                            <span class="infoLabel">
+                                                {{'_Functional_Location'|translate}}
+                                            </span>
+
+                                            <span class="infoTxt">
+                                                <fa-setting></fa-setting>
+                                                <span ng-if="!currentOrder.WorkCenter">none</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="infoHalf">
+                                            <span class="infoLabel">{{'_CustomerName'|translate}}</span>
+                                            <span class="infoTxt">{{currentOrder.Customer.Name}}<span ng-if="!currentOrder.Customer.Name">none</span></span>
+                                            <span class="infoLabel">{{'_CustomerAddress'|translate}}</span>
+                                            <span class="infoTxt">{{currentOrder.Customer.Street}}<br ng-if="currentOrder.Customer.Street"/>{{currentOrder.Customer.Country}}-{{currentOrder.Customer.PostalCode}} {{currentOrder.Customer.City}}<span ng-if="!(currentOrder.Customer.Street||currentOrder.Customer.City)">none</span></span>
+                                        </div>
+                                    </tab>
+                                    <tab heading={{'_Attachments'|translate}} class="tab_heading" active="activateAttachments" ng-if="currentOrder.Documents.length > 0">
+                                        <div class="attachment"
+                                            ng-repeat="document in currentOrder.Documents track by $index"
+                                            ng-click="gotoAttachment(document);">
+                                            <div class="attachment-icon">
+                                                <span class="fa fa-file-o"
+                                                    ng-class="{'fa-file-image-o':document.MimeType==='image/jpeg'||document.MimeType==='image/png',
+                                                'fa-file-pdf-o': document.MimeType === 'application/pdf'}"></span>
+                                            </div>
+                                            <div class="attachment-name">
+                                                <span ng-if="document.FileName">{{document.FileName + '.' + document.MimeType.split('/')[1]}}</span>
+                                                <span ng-if="!document.FileName">{{document.DocumentId + '.' + document.MimeType.split('/')[1]}}</span>
+                                            </div>
+                                            <div class="attachment-download">
+                                                <span class="fa fa-chevron-right"></span>
+                                            </div>
+                                        </div>
+                                    </tab>
+                                </tabset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonBox">
+                    <a class="button btn-dark" ng-click="goToOrderInfo()">
+                        <span class="fa fa-info orange"></span>
+                        {{'_Information'|translate}}
+                    </a>
+                    <a class="button btn-dark" ng-click="goToServiceReport()">
+                        <span class="fa fa-eye orange"></span>
+                        {{'_Service_Report'|translate}}
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

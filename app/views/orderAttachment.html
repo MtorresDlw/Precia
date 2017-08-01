@@ -1,0 +1,26 @@
+<div class="page order-container">
+    <header>
+        <div class="header-container">
+            <span ng-click="goToOrderDetail()">
+                <a class="backBtn"><span class="fa fa-angle-left"></span></a>
+                {{'_Order'|translate}} {{currentOrder.OrderNr}} <span ng-if="currentOrder.Description">: </span>{{currentOrder.Description}}
+            </span>
+        </div>
+    </header>
+    <div class="page-view">
+        <section class="page-content">
+            <div class="page-whole">
+                <div class="center" style="height:100%">
+                    <div class="carousel-stow" ng-if="pages.length > 0"  style="height:100%">
+                        <ul rn-carousel rn-carousel-controls rn-carousel-index="carouselIndex" class="carousel1 grid" style="margin-top:0; height:100%">
+                            <li ng-repeat="page in pages">
+                                <img ng-src = {{page.url}} class="slide"/>
+                            </li>
+                        </ul>
+                        <div rn-carousel-indicators ng-if="pages.length > 1" slides="slides" rn-carousel-index="carouselIndex"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

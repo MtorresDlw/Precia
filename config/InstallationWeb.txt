@@ -1,0 +1,19 @@
+Hi Jérôme,
+
+I’ve put together this mail to get you started with the FieldAnywhere front end. If you need any more information, we can schedule a meeting next week.
+
+1.	All code can be found on https://github.com/netweaverdlw/FieldAnywhere
+The 2 most mature branches are STOW and release_meydan_v1. The master branch is not maintained and contains a dated version of the project.
+2.	For the app you should have cordova installed (npm install cordova -g), if you want to run the meydan ios version, you’ll need to use a mac
+3.	Once you have sync’d all the code from git, you first have to install all the npm packages (npm i)
+4.	To first build the project, you have to open a terminal/cmd prompt in the project root folder
+5.	The project uses gulp for build automation, the 2 most important gulp commands are:
+a.	Gulp : (default task) this will start a node web server that allows you to run the app in a webbrowser on address localhost:8080, note, you have to use google chrome with web-security disabled
+http://stackoverflow.com/questions/3102819/disable-same-origin-policy-in-chrome
+b.	Gulp cordova: the build task that build a mobile version of the app. Note, you might want to change the platform that is built in the gulpfile.js configuration.
+
+Other tidbits:
+-	If you have set a different/own gateway server, you ‘ll need to change the url the app uses. This URL can be changed in the app > scripts > services > http > urlService.js file
+-	Useful cordova commands (from the project root): 
+o	cordova platform add [ios/android/windows]: adds a platform to the project, make sure you have built the web project before executing this command, else you’ll have no ‘www’ folder and the command will fail
+o	cordova build [ios/android/windows]: copies the content of the www folder (so your built web project) to the right platform, after this everything should be available to deploy the right project and the right platform
